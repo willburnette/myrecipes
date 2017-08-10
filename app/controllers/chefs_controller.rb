@@ -28,7 +28,6 @@ class ChefsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
@@ -51,8 +50,7 @@ class ChefsController < ApplicationController
   private
 
   def chef_params
-    params.require(:chef).permit(:chefname, :email,
-                                    :password, :password_confirmation)
+    params.require(:chef).permit(:chefname, :email, :password, :password_confirmation)
   end
 
   def set_chef
@@ -74,32 +72,3 @@ class ChefsController < ApplicationController
   end
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
