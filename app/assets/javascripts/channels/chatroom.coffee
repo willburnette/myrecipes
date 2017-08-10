@@ -24,3 +24,4 @@ App.chatroom = App.cable.subscriptions.create "ChatroomChannel",
     scrollToBottom()
     return
     # Called when there's incoming data on the websocket for this channel
+
