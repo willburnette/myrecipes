@@ -34,6 +34,9 @@ gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'carrierwave', '0.11.2'
+gem 'mini_magick'
+gem 'fog'
 
 group :test, :development do
   # Use sqlite3 as the database for Active Record

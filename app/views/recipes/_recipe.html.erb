@@ -22,5 +22,18 @@
         </div>
       <% end %>
     </div>
+    <div class="col-md-2">
+      <%= image_tag(recipe.image.url, size: "150x100") if recipe.image? %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="pull-right liking">
+      <%= link_to like_recipe_path(recipe, like: true), method: :post do %>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+      <% end %> <%= recipe.thumbs_up_total %> ||
+      <%= link_to like_recipe_path(recipe, like: false), method: :post do %>
+        <i class="glyphicon glyphicon-thumbs-down"></i>
+      <% end %> <%= recipe.thumbs_down_total %>
+    </div>
   </div>
 <% end %>
