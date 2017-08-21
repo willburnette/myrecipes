@@ -1,6 +1,5 @@
 class IngredientsController < ApplicationController
   before_action :set_ingredient, only: [:edit, :update, :show]
-  before_action :require_admin, except: [:create, :show, :index]
 
   def new
     @ingredient = Ingredient.new
